@@ -9,8 +9,7 @@
 RewriteCond %{REQUEST_FILENAME}.html -f
 RewriteRule ^/?([a-zA-Z0-9]+)$ $1.html [L]
 
-# When using extensionless permalinks, output files written to disk will still have the proper file extension (typically .html), so the web server must be able to
-map requests without file extensions to these files.
+# When using extensionless permalinks, output files written to disk will still have the proper file extension (typically .html), so the web server must be able to map requests without file extensions to these files.
 # see: https://jekyllrb.com/docs/permalinks/
 
 ErrorDocument 404 https://usa.planetva.com/404.html
